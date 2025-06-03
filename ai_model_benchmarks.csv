@@ -1,0 +1,7 @@
+Model,SWE-bench Verified,Context Window,Input Cost (per 1M),Output Cost (per 1M),Special Capabilities
+Claude 4 Opus,72.5%,200K,$15,$75,7-hour autonomous work
+Claude 4 Sonnet,72.7%,200K,$3,$15,Enhanced instruction following
+Claude 3.7 Sonnet,70.3%,200K,$3,$15,Hybrid reasoning modes
+Gemini 2.5 Pro,63.8%,1M,$1.25,$10,"Large context, thinking models"
+Claude 3.5 Sonnet (Updated),49%,200K,$3,$15,Computer use
+GPT-4 Turbo,45%,128K,$10,$30,High throughput

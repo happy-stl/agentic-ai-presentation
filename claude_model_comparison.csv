@@ -1,0 +1,6 @@
+Model,Release Date,SWE-bench Score,Context Window,Input Price (per 1M tokens),Output Price (per 1M tokens),Key Features,Safety Level
+Claude 3.5 Sonnet (Original),June 2024,33%,200K tokens,$3,$15,"Coding, Artifacts",ASL-2
+Claude 3.5 Sonnet (Updated),October 2024,49%,200K tokens,$3,$15,"Computer Use, Enhanced Coding",ASL-2
+Claude 3.7 Sonnet,"February 24, 2025",70.3%,200K tokens,$3,$15,"Hybrid Reasoning, Extended Thinking, Claude Code",ASL-2
+Claude 4 Sonnet,"May 22, 2025",72.7%,200K tokens,$3,$15,"Enhanced Reasoning, Better Instructions",ASL-2
+Claude 4 Opus,"May 22, 2025",72.5%,200K tokens,$15,$75,"7-hour autonomous work, ASL-3 Safety",ASL-3
