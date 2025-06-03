@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agentic AI Software Engineering: Best Practices for Modern Development</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navigation" id="navigation">
@@ -42,20 +44,30 @@
         <div class="tooltip-arrow"></div>
     </div>
 
+    <!-- Citation Tooltip -->
+    <!-- For old version -->
+    <div id="citationTooltip" class="citation-tooltip">
+        <div class="tooltip-content">
+            <div class="tooltip-source"></div>
+            <div class="tooltip-summary"></div>
+            <a class="tooltip-link" target="_blank">View Source</a>
+        </div>
+    </div>
+
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
         <div class="hero-content fade-in">
             <h1 class="hero-title">Agentic AI Software Engineering</h1>
             <h2 class="hero-subtitle">Best Practices for Modern Development</h2>
-            <p class="hero-description">Implementing AI-Powered Development with Claude 3.7/4.0, MCP, and Advanced Models</p>
+            <p class="hero-description">Implementing AI-Powered Development with Advanced Models, MCP, and TDD</p>
             <div class="hero-stats">
                 <div class="stat-card">
-                    <span class="stat-number">72.7%</span>
-                    <span class="stat-label"><span class="cited-text" data-citation="3">Claude 4 Sonnet SWE-bench</span></span>
+                    <span class="stat-number" data-cite="3">72.7%</span>
+                    <span class="stat-label">Claude 4 Sonnet SWE-bench</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-number">120%</span>
-                    <span class="stat-label">Performance Improvement</span>
+                    <span class="stat-number" data-cite="4">92%</span>
+                    <span class="stat-label">Developers Use AI Tools</span>
                 </div>
                 <div class="stat-card">
                     <span class="stat-number">40min</span>
@@ -72,7 +84,9 @@
             <div class="intro-grid">
                 <div class="intro-content">
                     <h3>Paradigm Shift in Software Engineering</h3>
-                    <p>Agentic AI represents a fundamental shift from traditional automation to intelligent, autonomous systems capable of reasoning, adapting, and collaborating in software development environments.</p>
+                    <p>Agentic AI represents a fundamental shift from traditional automation to intelligent, autonomous
+                        systems capable of reasoning, adapting, and collaborating in software development environments.
+                    </p>
                     <div class="comparison-cards">
                         <div class="comparison-card traditional">
                             <h4>Traditional Automation</h4>
@@ -102,7 +116,8 @@
                         <div class="stat-details">
                             <h4>Developer AI Adoption</h4>
                             <p>vs 15% in 2022</p>
-                            <span class="stat-context"><span class="cited-text" data-citation="4">GitHub 2025 Developer Survey</span></span>
+                            <span class="stat-context"><span class="cited-text" data-citation="4">GitHub 2025 Developer
+                                    Survey</span></span>
                         </div>
                     </div>
                     <div class="stat-item">
@@ -112,7 +127,8 @@
                         <div class="stat-details">
                             <h4>Code Quality Improvement</h4>
                             <p>with Claude 3.7+ models</p>
-                            <span class="stat-context"><span class="cited-text" data-citation="3">verified SWE-bench results</span></span>
+                            <span class="stat-context"><span class="cited-text" data-citation="3">verified SWE-bench
+                                    results</span></span>
                         </div>
                     </div>
                 </div>
@@ -157,22 +173,22 @@
                             <h4>✅ Effective Prompt</h4>
                             <div class="prompt-text">Create a secure user authentication system using JWT tokens.
 
-### Requirements
-- Express.js REST API endpoints for login/logout
-- Password hashing with bcrypt (salt rounds: 12)
-- JWT token expiration: 24 hours
-- Input validation for email/password format
-- Rate limiting: 5 attempts per 15 minutes
+                                ### Requirements
+                                - Express.js REST API endpoints for login/logout
+                                - Password hashing with bcrypt (salt rounds: 12)
+                                - JWT token expiration: 24 hours
+                                - Input validation for email/password format
+                                - Rate limiting: 5 attempts per 15 minutes
 
-### Output Format
-- TypeScript interfaces for request/response
-- Express middleware functions with error handling
-- Proper HTTP status codes (200, 401, 429, 500)
-- JSDoc comments for all functions
+                                ### Output Format
+                                - TypeScript interfaces for request/response
+                                - Express middleware functions with error handling
+                                - Proper HTTP status codes (200, 401, 429, 500)
+                                - JSDoc comments for all functions
 
-### Security Considerations
-- No sensitive data in JWT payload
-- Secure cookie settings for token storage</div>
+                                ### Security Considerations
+                                - No sensitive data in JWT payload
+                                - Secure cookie settings for token storage</div>
                         </div>
                     </div>
                 </div>
@@ -187,7 +203,9 @@
             <div class="mcp-content">
                 <div class="mcp-intro">
                     <h3>Universal Standard for AI-Tool Connections</h3>
-                    <p><span class="cited-text" data-citation="5">Model Context Protocol (MCP) provides a standardized architecture</span> for connecting AI systems with external data sources, tools, and services, enabling seamless integration across development environments.</p>
+                    <p><span class="cited-text" data-citation="5">Model Context Protocol (MCP) provides a standardized
+                            architecture</span> for connecting AI systems with external data sources, tools, and
+                        services, enabling seamless integration across development environments.</p>
                 </div>
                 <div class="mcp-architecture">
                     <h3>Client-Server Architecture</h3>
@@ -260,13 +278,16 @@
             <div class="claude-evolution-content">
                 <div class="evolution-intro">
                     <h3>Revolutionary Performance Leap</h3>
-                    <p>The evolution from Claude 3.5 to Claude 4.0 represents the most significant advancement in AI coding capabilities, with <span class="cited-text" data-citation="3">verified SWE-bench performance improvements from 33% to 72.7%</span>.</p>
+                    <p>The evolution from Claude 3.5 to Claude 4.0 represents the most significant advancement in AI
+                        coding capabilities, with <span class="cited-text" data-citation="3">verified SWE-bench
+                            performance improvements from 33% to 72.7%</span>.</p>
                 </div>
-                
+
                 <!-- Performance Chart -->
                 <div class="chart-container">
                     <h3>SWE-bench Performance Comparison</h3>
-                    <img src="https://pplx-res.cloudinary.com/image/upload/v1748842678/pplx_code_interpreter/ac19a464_w5q4qt.jpg" alt="AI Model Performance Comparison Chart" class="performance-chart">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/v1748842678/pplx_code_interpreter/ac19a464_w5q4qt.jpg"
+                        alt="AI Model Performance Comparison Chart" class="performance-chart">
                     <p class="chart-caption">Comprehensive AI model comparison across SWE-bench performance metrics</p>
                 </div>
 
@@ -294,7 +315,8 @@
                             <div class="timeline-date">May 22, 2025</div>
                             <div class="timeline-content">
                                 <h4>Claude 4 Opus & Sonnet</h4>
-                                <p><span class="cited-text" data-citation="2">72.5% (Opus) / 72.7% (Sonnet) SWE-bench</span></p>
+                                <p><span class="cited-text" data-citation="2">72.5% (Opus) / 72.7% (Sonnet)
+                                        SWE-bench</span></p>
                                 <span class="timeline-features">World's Best Coding Models</span>
                                 <div class="world-class-badge">🏆 World Leader</div>
                             </div>
@@ -323,9 +345,12 @@
                             <div class="model-features">
                                 <h5>Key Innovations</h5>
                                 <ul>
-                                    <li>🧠 <span class="cited-text" data-citation="1">Hybrid Reasoning Architecture</span></li>
-                                    <li>🔄 <span class="cited-text" data-citation="1">Extended Thinking Processes</span></li>
-                                    <li>💻 <span class="cited-text" data-citation="1">Claude Code Integration</span></li>
+                                    <li>🧠 <span class="cited-text" data-citation="1">Hybrid Reasoning
+                                            Architecture</span></li>
+                                    <li>🔄 <span class="cited-text" data-citation="1">Extended Thinking Processes</span>
+                                    </li>
+                                    <li>💻 <span class="cited-text" data-citation="1">Claude Code Integration</span>
+                                    </li>
                                     <li>🎯 Dual-Mode Operation</li>
                                 </ul>
                             </div>
@@ -349,8 +374,10 @@
                             <div class="model-features">
                                 <h5>Advanced Capabilities</h5>
                                 <ul>
-                                    <li>🤖 <span class="cited-text" data-citation="2">7-hour Autonomous Programming</span></li>
-                                    <li>🛡️ <span class="cited-text" data-citation="2">ASL-3 Safety Classification</span></li>
+                                    <li>🤖 <span class="cited-text" data-citation="2">7-hour Autonomous
+                                            Programming</span></li>
+                                    <li>🛡️ <span class="cited-text" data-citation="2">ASL-3 Safety
+                                            Classification</span></li>
                                     <li>🌍 Best Coding Model Worldwide</li>
                                     <li>⚡ Enhanced Reasoning Speed</li>
                                 </ul>
@@ -375,8 +402,10 @@
                             <div class="model-features">
                                 <h5>Optimized Excellence</h5>
                                 <ul>
-                                    <li>🎯 <span class="cited-text" data-citation="2">Enhanced Reasoning Precision</span></li>
-                                    <li>📋 <span class="cited-text" data-citation="2">Better Instruction Following</span></li>
+                                    <li>🎯 <span class="cited-text" data-citation="2">Enhanced Reasoning
+                                            Precision</span></li>
+                                    <li>📋 <span class="cited-text" data-citation="2">Better Instruction
+                                            Following</span></li>
                                     <li>⚡ Optimal Speed-Quality Balance</li>
                                     <li>🔧 Production-Ready Stability</li>
                                 </ul>
@@ -390,7 +419,8 @@
                     <div class="validation-grid">
                         <div class="validation-item">
                             <h4>📊 SWE-bench Verification</h4>
-                            <p>All performance metrics verified against the <span class="cited-text" data-citation="3">standardized Software Engineering benchmark dataset</span></p>
+                            <p>All performance metrics verified against the <span class="cited-text"
+                                    data-citation="3">standardized Software Engineering benchmark dataset</span></p>
                         </div>
                         <div class="validation-item">
                             <h4>🔬 Independent Research</h4>
@@ -402,10 +432,12 @@
                         </div>
                     </div>
                     <div class="research-source">
-                        <p><strong>Complete Research Session:</strong> 
-                        <a href="https://www.perplexity.ai/search/review-the-previous-conversati-K83P3EuAT9CJI_IxmE_bfw" target="_blank" class="cited-text" data-citation="6">
-                            View Original Perplexity Research & Analysis
-                        </a></p>
+                        <p><strong>Complete Research Session:</strong>
+                            <a href="https://www.perplexity.ai/search/review-the-previous-conversati-K83P3EuAT9CJI_IxmE_bfw"
+                                target="_blank" class="cited-text" data-citation="6">
+                                View Original Perplexity Research & Analysis
+                            </a>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -419,7 +451,8 @@
             <div class="tdd-content">
                 <div class="analogy-section">
                     <h3>Evolutionary Programming Paradigm</h3>
-                    <p>Test-Driven Development serves as fitness functions in evolutionary algorithms, providing selective pressure that guides AI code generation toward optimal, robust solutions.</p>
+                    <p>Test-Driven Development serves as fitness functions in evolutionary algorithms, providing
+                        selective pressure that guides AI code generation toward optimal, robust solutions.</p>
                     <div class="analogy-comparison">
                         <div class="analogy-item">
                             <h4>Genetic Algorithm Fitness</h4>
@@ -443,11 +476,13 @@
                 </div>
                 <div class="ffdd-concept">
                     <h3>Fitness Function-Driven Development (FFDD)</h3>
-                    <p>A new paradigm where comprehensive test suites act as multi-dimensional fitness landscapes, enabling AI systems to evolve code through successive generations of improvement.</p>
+                    <p>A new paradigm where comprehensive test suites act as multi-dimensional fitness landscapes,
+                        enabling AI systems to evolve code through successive generations of improvement.</p>
                     <div class="ffdd-process">
                         <div class="process-step">
                             <h4>1. Define Fitness Landscape</h4>
-                            <p>Create comprehensive test suites covering functional, performance, and security requirements</p>
+                            <p>Create comprehensive test suites covering functional, performance, and security
+                                requirements</p>
                         </div>
                         <div class="process-arrow">→</div>
                         <div class="process-step">
@@ -466,7 +501,8 @@
                     <div class="benefit-cards">
                         <div class="benefit-card">
                             <h4>🎯 Precision Validation</h4>
-                            <p>Architectural constraints and business rules are precisely validated through automated testing frameworks</p>
+                            <p>Architectural constraints and business rules are precisely validated through automated
+                                testing frameworks</p>
                         </div>
                         <div class="benefit-card">
                             <h4>📚 Behavioral Documentation</h4>
@@ -474,11 +510,13 @@
                         </div>
                         <div class="benefit-card">
                             <h4>🔍 Targeted Error Correction</h4>
-                            <p>Failed tests provide specific, actionable feedback for AI code iteration and improvement</p>
+                            <p>Failed tests provide specific, actionable feedback for AI code iteration and improvement
+                            </p>
                         </div>
                         <div class="benefit-card">
                             <h4>🛡️ Regression Prevention</h4>
-                            <p>Continuous fitness evaluation prevents degradation in code quality during AI-driven refactoring</p>
+                            <p>Continuous fitness evaluation prevents degradation in code quality during AI-driven
+                                refactoring</p>
                         </div>
                     </div>
                 </div>
@@ -532,7 +570,8 @@
                     <div class="pattern-flow">
                         <div class="pattern-step">
                             <h4>1. LLM Creative Frontend</h4>
-                            <p>Natural language interpretation, requirement analysis, and creative problem space exploration</p>
+                            <p>Natural language interpretation, requirement analysis, and creative problem space
+                                exploration</p>
                         </div>
                         <div class="pattern-arrow">→</div>
                         <div class="pattern-step">
@@ -551,7 +590,8 @@
                     <div class="challenge-grid">
                         <div class="challenge-item">
                             <h4>🔄 Context Synchronization</h4>
-                            <p><strong>Challenge:</strong> Maintaining coherent state across LLM and classical components</p>
+                            <p><strong>Challenge:</strong> Maintaining coherent state across LLM and classical
+                                components</p>
                             <p><strong>Solution:</strong> Event-driven architecture with immutable state management</p>
                         </div>
                         <div class="challenge-item">
@@ -578,39 +618,46 @@
                 <div class="takeaways-grid">
                     <div class="takeaway-card">
                         <h3>🚀 Claude 4.0 Revolution</h3>
-                        <p>The <span class="cited-text" data-citation="2">120% performance improvement from Claude 3.5 to 4.0</span> represents a paradigm shift in AI-assisted development capabilities.</p>
+                        <p>The <span class="cited-text" data-citation="2">120% performance improvement from Claude 3.5
+                                to 4.0</span> represents a paradigm shift in AI-assisted development capabilities.</p>
                     </div>
                     <div class="takeaway-card">
                         <h3>📝 Advanced Prompt Engineering</h3>
-                        <p>Mastering structured prompting with <span class="cited-text" data-citation="1">Claude 3.7+ hybrid reasoning</span> unlocks unprecedented development productivity.</p>
+                        <p>Mastering structured prompting with <span class="cited-text" data-citation="1">Claude 3.7+
+                                hybrid reasoning</span> unlocks unprecedented development productivity.</p>
                     </div>
                     <div class="takeaway-card">
                         <h3>🔌 MCP Integration</h3>
-                        <p><span class="cited-text" data-citation="5">Model Context Protocol enables seamless tool integration</span>, creating unified development ecosystems.</p>
+                        <p><span class="cited-text" data-citation="5">Model Context Protocol enables seamless tool
+                                integration</span>, creating unified development ecosystems.</p>
                     </div>
                     <div class="takeaway-card">
                         <h3>⚖️ Hybrid Intelligence</h3>
-                        <p>Combining LLM creativity with classical AI precision creates robust, production-ready systems.</p>
+                        <p>Combining LLM creativity with classical AI precision creates robust, production-ready
+                            systems.</p>
                     </div>
                     <div class="takeaway-card">
                         <h3>🧬 FFDD Methodology</h3>
-                        <p>Fitness Function-Driven Development transforms TDD into evolutionary programming paradigm.</p>
+                        <p>Fitness Function-Driven Development transforms TDD into evolutionary programming paradigm.
+                        </p>
                     </div>
                     <div class="takeaway-card">
                         <h3>🛡️ Security-First Design</h3>
-                        <p><span class="cited-text" data-citation="2">ASL-3 safety standards in Claude 4</span> enable enterprise-grade autonomous development workflows.</p>
+                        <p><span class="cited-text" data-citation="2">ASL-3 safety standards in Claude 4</span> enable
+                            enterprise-grade autonomous development workflows.</p>
                     </div>
                 </div>
-                
+
                 <div class="next-steps">
                     <h3>Live Demonstration: Docker Containerized Agents</h3>
-                    <p>Next, we'll demonstrate these concepts in practice by running Erlang-based agentic systems in Docker containers, showcasing real-world implementation of Claude 4.0 integration.</p>
+                    <p>Next, we'll demonstrate these concepts in practice by running Erlang-based agentic systems in
+                        Docker containers, showcasing real-world implementation of Claude 4.0 integration.</p>
                     <div class="demo-prep">
                         <span class="demo-status">🔄 Preparing containers...</span>
                         <span id="presentation-timer" class="timer">0:00</span>
                     </div>
                 </div>
-                
+
                 <div class="citations-section">
                     <h3>Research Citations & Validation</h3>
                     <div class="citations-grid">
@@ -658,10 +705,12 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="qa-section">
                     <h3>Questions & Discussion</h3>
-                    <p>Thank you for your attention. I'm ready to discuss any questions about Claude 3.7/4.0 capabilities, agentic AI implementation, FFDD methodology, or the upcoming live demonstration.</p>
+                    <p>Thank you for your attention. I'm ready to discuss any questions about Claude 3.7/4.0
+                        capabilities, agentic AI implementation, FFDD methodology, or the upcoming live demonstration.
+                    </p>
                 </div>
             </div>
         </div>
@@ -669,4 +718,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
