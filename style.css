@@ -1961,7 +1961,7 @@ select.form-control {
   font-size: var(--font-size-sm);
   line-height: 1.6;
   overflow-x: auto;
-  white-space: pre-wrap;
+  white-space: pre-line;
 }
 
 /* MCP Section */
