@@ -2,106 +2,106 @@
 const citations = {
     1: {
         id: 1,
-        text: "Claude 3.5 Sonnet solved 64% of problems",
-        source: "Anthropic Official Announcement",
+        title: "Claude 3.5 Sonnet solved 64% of problems",
+        source: "Anthropic",
         url: "https://www.anthropic.com/news/claude-3-5-sonnet",
         summary: "In internal agentic coding evaluation, Claude 3.5 Sonnet solved 64% of problems, outperforming Claude 3 Opus (38%). Shows marked improvement in coding proficiency and complex instruction handling."
     },
     2: {
         id: 2,
-        text: "SWE-bench: benchmark for real-world coding tasks",
-        source: "SWE-bench Official Website",
+        title: "SWE-bench: benchmark for real-world coding tasks",
+        source: "SWE-bench",
         url: "http://www.swebench.com",
         summary: "SWE-bench is a benchmark for evaluating AI coding assistants on real-world GitHub issues. It measures how effectively models can understand and implement code changes across diverse codebases and languages."
     },
     3: {
         id: 3,
-        text: "92% of developers use AI coding tools",
-        source: "GitHub Developer Survey 2024",
+        title: "92% of developers use AI coding tools",
+        source: "GitHub",
         url: "https://github.blog/news-insights/research/survey-reveals-ais-impact-on-the-developer-experience/",
         summary: "Survey reveals 92% of U.S.-based developers are using AI coding tools both in and outside of work. 70% see significant benefits including improved productivity and collaboration."
     },
     4: {
         id: 4,
-        text: "Claude Sonnet 4 achieves 72.7% on SWE-bench",
-        source: "Introducing Claude 4",
+        title: "Introducing Claude 4",
+        source: "Anthropic",
         url: "https://www.anthropic.com/news/claude-4",
         summary: "Claude Sonnet 4 significantly improves on previous capabilities, excelling in coding with a state-of-the-art 72.7% on SWE-bench Verified, a benchmark for performance on real software engineering tasks."
     },
     5: {
         id: 5,
-        text: "Gemini 2.5 Pro tops LMArena by close to 40 points",
+        title: "Gemini 2.5 Pro tops LMArena by close to 40 points",
         source: "RD World Report March 2025",
         url: "https://www.rdworldonline.com/googles-gemini-2-5-pro-model-tops-lmarena-by-40-points-outperforms-competitors-in-scientific-reasoning/",
         summary: "Gemini 2.5 Pro achieved 84% on GPQA Diamond benchmark, leading LMArena. Features thinking model capabilities and 1 million token context window with native multimodality."
     },
     6: {
         id: 6,
-        text: "Model Context Protocol (MCP) creates a standard for AI tools",
+        title: "Model Context Protocol (MCP) creates a standard for AI tools",
         source: "Model Context Protocol Official Documentation",
         url: "https://modelcontextprotocol.io/introduction",
         summary: "Model Context Protocol (MCP) is an open standard that enables LLMs to use tools via a consistent interface. It provides a unified way to connect AI systems with external data sources, APIs, and user interfaces through a structured protocol."
     },
     7: {
         id: 7,
-        text: "Fitness function-driven development concepts",
-        source: "ThoughtWorks Architecture Insights",
+        title: "Fitness function-driven development concepts",
+        source: "ThoughtWorks",
         url: "https://www.thoughtworks.com/en-us/insights/articles/fitness-function-driven-development",
         summary: "Fitness functions describe how close an architecture is to achieving architectural aims. During TDD, tests verify features conform to business outcomes; with fitness functions, tests measure system alignment to architectural goals."
     },
     8: {
         id: 8,
-        text: "Developers save 1-8 hours per week with AI tools",
-        source: "JetBrains AI Assistant Survey 2024",
+        title: "JetBrains AI Assistant Survey 2024",
+        source: "JetBrains",
         url: "https://blog.jetbrains.com/ai/2024/04/developers-save-up-to-8-hours-per-week-with-jetbrains-ai-assistant/",
         summary: "91% of developers save time with AI tools. 37% save 1-3 hours per week, 22% save 3-5 hours per week, and 4% save more than 8 hours per week. Significant productivity improvements reported."
     },
     9: {
         id: 9,
-        text: "Claude 3.7+ models show 70% code quality improvement",
+        title: "Claude 3.7+ models show 70% code quality improvement",
         source: "DataCamp Blog",
         url: "https://www.datacamp.com/blog/claude-3-7-sonnet",
         summary: "Claude 3.7 Sonnet shows a clear advantage in software engineering, with a 62.3% accuracy score in SWE-bench Verified, a significant jump from Claude 3.5 Sonnet's 49.0%. When using a custom scaffold (a structured prompt or additional context that helps guide the model's response toward a more accurate solution), that accuracy increases to 70.3%, making it the best-performing model in this category."
     },
     10: {
         id: 10,
-        text: "Claude 3.5 Sonnet achieved 49% on SWE-bench Verified",
-        source: "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+        title: "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+        source: "Anthropic",
         url: "https://www.anthropic.com/engineering/swe-bench-sonnet",
         summary: "The updated Claude 3.5 Sonnet achieved 49% on SWE-bench Verified, beating previous state-of-the-art models. SWE-bench tests a model's ability to complete real-world software engineering tasks from GitHub issues. Claude's performance demonstrates significant improvements in understanding, modifying, and testing code in complex repositories."
     },
     11: {
         id: 11,
-        text: "Claude 3.7 Sonnet: First hybrid reasoning model",
-        source: "Claude 3.7 Sonnet and Claude Code",
+        title: "Claude 3.7 Sonnet and Claude Code",
+        source: "Anthropic",
         url: "https://www.anthropic.com/news/claude-3-7-sonnet",
         summary: "Claude 3.7 Sonnet is Anthropic's most intelligent model to date and the first hybrid reasoning model, capable of both near-instant responses and extended, step-by-step thinking visible to users. It shows particularly strong improvements in coding, achieving state-of-the-art performance on SWE-bench Verified and TAU-bench."
     },
     12: {
         id: 12,
-        text: "Anthropic activates AI Safety Level 3 protections",
-        source: "Activating AI Safety Level 3 Protections",
+        title: "Activating AI Safety Level 3 Protections",
+        source: "Anthropic",
         url: "https://www.anthropic.com/news/activating-asl3-protections",
         summary: "Anthropic has implemented AI Safety Level 3 (ASL3) protections for their advanced AI systems. These higher-tier safety measures include enhanced safeguards against misuse, improved monitoring systems, and stronger defenses against prompt injection and jailbreaking attempts while maintaining the system's utility."
     },
     13: {
         id: 13,
-        text: "Cursor AI: AI-powered coding assistant",
-        source: "Cursor AI Official Website",
+        title: "Cursor AI: AI-powered coding assistant",
+        source: "Cursor AI",
         url: "https://www.cursor.com",
         summary: "Cursor AI is an AI-powered coding assistant that helps developers write code faster and more efficiently. It uses advanced AI models to understand developer intent and generate code suggestions."
     },
     14: {
         id: 14,
-        text: "Perplexity.ai: AI-powered research assistant",
-        source: "Agentic AI Software Engineering: Best Practices for Modern Development with Cursor and AI-Powered Tools",
+        title: "Agentic AI Software Engineering: Best Practices for Modern Development with Cursor and AI-Powered Tools",
+        source: "Perplexity",
         url: "https://www.perplexity.ai/search/hello-can-you-please-help-me-p-LrF_Q5v.SQupTmo.VaL5sQ",
         summary: "This research explores the emerging landscape of agentic AI in software development, focusing on practical implementation strategies, prompt engineering excellence, and the integration of advanced AI models through tools like Cursor."
     },
     15: {
         id: 15,
-        text: "GitHub: Code repository for this presentation",
-        source: "GitHub: Agentic AI Presentation",
+        title: "Agentic AI Presentation",
+        source: "GitHub",
         url: "https://github.com/happiness-enterprises/agentic-ai-presentation",
         summary: "This is the code repository for this presentation."
     }
@@ -182,9 +182,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function showTooltip(event, citation) {
+        const tooltipTitle = citationTooltip.querySelector('.tooltip-title');
         const tooltipSource = citationTooltip.querySelector('.tooltip-source');
         const tooltipSummary = citationTooltip.querySelector('.tooltip-summary');
 
+        tooltipTitle.textContent = citation.title;
         tooltipSource.textContent = citation.source;
         tooltipSummary.textContent = citation.summary;
 

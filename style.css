@@ -1057,10 +1057,20 @@ pre code {
 .tooltip-title {
   font-weight: var(--font-weight-semibold);
   color: var(--color-text);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-md);
   line-height: var(--line-height-tight);
   flex: 1;
 }
+
+.tooltip-source {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-tight);
+  flex: 1;
+  font-style: italic;
+}
+
 
 .tooltip-date {
   font-size: var(--font-size-xs);
