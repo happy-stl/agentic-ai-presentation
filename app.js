@@ -104,6 +104,13 @@ const citations = {
         source: "GitHub",
         url: "finanalyst-pro/index.html",
         summary: "FinAnalyst Pro is a prompt generator for the FinAnalyst Pro agentic system."
+    },
+    16: {
+        id: 16,
+        title: "William Grim",
+        source: "GitHub",
+        url: "https://github.com/grimwm",
+        summary: "William Grim is a software engineer and consultant."
     }
 };
 
