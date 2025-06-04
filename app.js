@@ -89,34 +89,55 @@ document.addEventListener('DOMContentLoaded', function () {
         const citedElements = document.querySelectorAll('[data-cite]');
 
         citedElements.forEach(element => {
-            element.addEventListener('mouseenter', function (e) {
-                const citeId = parseInt(this.getAttribute('data-cite'));
-                const citation = citations[citeId];
+            const citeId = parseInt(element.getAttribute('data-cite'));
+            const citation = citations[citeId];
 
-                if (citation) {
+            if (citation) {
+                // Create wrapper anchor element
+                const wrapper = document.createElement('a');
+                wrapper.href = citation.url;
+                wrapper.target = '_blank';
+                wrapper.rel = 'noopener noreferrer';
+
+                // Don't inherit text decoration from parent styles
+                wrapper.style.textDecoration = 'inherit';
+                wrapper.style.color = 'inherit';
+
+                // Clone element attributes to the wrapper
+                Array.from(element.attributes).forEach(attr => {
+                    if (attr.name !== 'data-cite') {
+                        wrapper.setAttribute(attr.name, attr.value);
+                    }
+                });
+
+                // Keep the data-cite attribute on the original element
+                wrapper.appendChild(element.cloneNode(true));
+
+                // Replace the original element with the wrapper
+                element.parentNode.replaceChild(wrapper, element);
+
+                // Use the wrapper for tooltip events
+                wrapper.addEventListener('mouseenter', function (e) {
                     showTooltip(e, citation);
-                }
-            });
+                });
 
-            element.addEventListener('mouseleave', function () {
-                hideTooltip();
-            });
+                wrapper.addEventListener('mouseleave', function () {
+                    hideTooltip();
+                });
 
-            element.addEventListener('mousemove', function (e) {
-                updateTooltipPosition(e);
-            });
+                wrapper.addEventListener('mousemove', function (e) {
+                    updateTooltipPosition(e);
+                });
+            }
         });
     }
 
     function showTooltip(event, citation) {
         const tooltipSource = citationTooltip.querySelector('.tooltip-source');
         const tooltipSummary = citationTooltip.querySelector('.tooltip-summary');
-        const tooltipLink = citationTooltip.querySelector('.tooltip-link');
 
         tooltipSource.textContent = citation.source;
         tooltipSummary.textContent = citation.summary;
-        tooltipLink.href = citation.url;
-        tooltipLink.textContent = 'View Source';
 
         citationTooltip.classList.add('visible');
         updateTooltipPosition(event);
@@ -514,12 +535,24 @@ document.addEventListener('DOMContentLoaded', function () {
     // Add accessibility features
     function enhanceAccessibility() {
         // Add ARIA labels to cited elements
-        const citedElements = document.querySelectorAll('[data-cite]');
+        const citedElements = document.querySelectorAll('a[href]:has([data-cite]), [data-cite]');
         citedElements.forEach(element => {
-            const citeId = parseInt(element.getAttribute('data-cite'));
+            let citeId;
+
+            // Check if this is a wrapper or original element
+            if (element.hasAttribute('data-cite')) {
+                citeId = parseInt(element.getAttribute('data-cite'));
+            } else {
+                // This is a wrapper, get the citation id from the child
+                const citedChild = element.querySelector('[data-cite]');
+                if (citedChild) {
+                    citeId = parseInt(citedChild.getAttribute('data-cite'));
+                }
+            }
+
             const citation = citations[citeId];
             if (citation) {
-                element.setAttribute('aria-label', `Cited content: ${citation.source}`);
+                element.setAttribute('aria-label', `Cited content: ${citation.source}. Click to visit source.`);
                 element.setAttribute('role', 'button');
                 element.setAttribute('tabindex', '0');
 
@@ -527,7 +560,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 element.addEventListener('keydown', function (e) {
                     if (e.key === 'Enter' || e.key === ' ') {
                         e.preventDefault();
-                        // Simulate mouse enter to show tooltip
+                        // Navigate to the URL
+                        window.open(citation.url, '_blank', 'noopener,noreferrer');
+
+                        // Also show tooltip
                         const mouseEvent = new MouseEvent('mouseenter', {
                             clientX: element.getBoundingClientRect().left + element.offsetWidth / 2,
                             clientY: element.getBoundingClientRect().top + element.offsetHeight / 2
