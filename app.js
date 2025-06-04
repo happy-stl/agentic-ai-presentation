@@ -104,6 +104,27 @@ const citations = {
         source: "GitHub",
         url: "https://github.com/happiness-enterprises/agentic-ai-presentation",
         summary: "This is the code repository for this presentation."
+    },
+    16: {
+        id: 16,
+        title: "Cursor Rules",
+        source: "Cursor",
+        url: "https://docs.cursor.com/context/rules",
+        summary: "Cursor rules are a way to guide the AI's behavior. They are a set of instructions that the AI will follow when it is given a task."
+    },
+    17: {
+        id: 17,
+        title: "Windsurf Rules",
+        source: "Windsurf",
+        url: "https://windsurf.com/editor/directory",
+        summary: "Windsurf rules are a way to guide the AI's behavior. They are a set of instructions that the AI will follow when it is given a task."
+    },
+    18: {
+        id: 18,
+        title: "FinAnalyst Pro",
+        source: "GitHub",
+        url: "finanalyst-pro/index.html",
+        summary: "FinAnalyst Pro is a prompt generator for the FinAnalyst Pro agentic system."
     }
 };
 
