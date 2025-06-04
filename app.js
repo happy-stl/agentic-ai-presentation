@@ -173,6 +173,8 @@ document.addEventListener('DOMContentLoaded', function () {
             y = viewportHeight - tooltipRect.height - 20;
         }
 
+        // Use fixed positioning with client coordinates to stay with viewport
+        citationTooltip.style.position = 'fixed';
         citationTooltip.style.left = x + 'px';
         citationTooltip.style.top = y + 'px';
     }
