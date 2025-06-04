@@ -1,105 +1,105 @@
 // Citation data
 const citations = {
-    2: {
-        id: 2,
+    1: {
+        id: 1,
         title: "SWE-bench: benchmark for real-world coding tasks",
         source: "SWE-bench",
         url: "http://www.swebench.com",
         summary: "SWE-bench is a benchmark for evaluating AI coding assistants on real-world GitHub issues. It measures how effectively models can understand and implement code changes across diverse codebases and languages."
     },
-    3: {
-        id: 3,
+    2: {
+        id: 2,
         title: "92% of developers use AI coding tools",
         source: "GitHub",
         url: "https://github.blog/news-insights/research/survey-reveals-ais-impact-on-the-developer-experience/",
         summary: "Survey reveals 92% of U.S.-based developers are using AI coding tools both in and outside of work. 70% see significant benefits including improved productivity and collaboration."
     },
-    4: {
-        id: 4,
+    3: {
+        id: 3,
         title: "Introducing Claude 4",
         source: "Anthropic",
         url: "https://www.anthropic.com/news/claude-4",
         summary: "Claude Sonnet 4 significantly improves on previous capabilities, excelling in coding with a state-of-the-art 72.7% on SWE-bench Verified, a benchmark for performance on real software engineering tasks."
     },
-    6: {
-        id: 6,
+    4: {
+        id: 4,
         title: "Model Context Protocol (MCP) creates a standard for AI tools",
         source: "Model Context Protocol Official Documentation",
         url: "https://modelcontextprotocol.io/introduction",
         summary: "Model Context Protocol (MCP) is an open standard that enables LLMs to use tools via a consistent interface. It provides a unified way to connect AI systems with external data sources, APIs, and user interfaces through a structured protocol."
     },
-    7: {
-        id: 7,
+    5: {
+        id: 5,
         title: "Fitness function-driven development concepts",
         source: "ThoughtWorks",
         url: "https://www.thoughtworks.com/en-us/insights/articles/fitness-function-driven-development",
         summary: "Fitness functions describe how close an architecture is to achieving architectural aims. During TDD, tests verify features conform to business outcomes; with fitness functions, tests measure system alignment to architectural goals."
     },
-    9: {
-        id: 9,
+    6: {
+        id: 6,
         title: "Claude 3.7+ models show 70% code quality improvement",
         source: "DataCamp Blog",
         url: "https://www.datacamp.com/blog/claude-3-7-sonnet",
         summary: "Claude 3.7 Sonnet shows a clear advantage in software engineering, with a 62.3% accuracy score in SWE-bench Verified, a significant jump from Claude 3.5 Sonnet's 49.0%. When using a custom scaffold (a structured prompt or additional context that helps guide the model's response toward a more accurate solution), that accuracy increases to 70.3%, making it the best-performing model in this category."
     },
-    10: {
-        id: 10,
+    7: {
+        id: 7,
         title: "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
         source: "Anthropic",
         url: "https://www.anthropic.com/engineering/swe-bench-sonnet",
         summary: "The updated Claude 3.5 Sonnet achieved 49% on SWE-bench Verified, beating previous state-of-the-art models. SWE-bench tests a model's ability to complete real-world software engineering tasks from GitHub issues. Claude's performance demonstrates significant improvements in understanding, modifying, and testing code in complex repositories."
     },
-    11: {
-        id: 11,
+    8: {
+        id: 8,
         title: "Claude 3.7 Sonnet and Claude Code",
         source: "Anthropic",
         url: "https://www.anthropic.com/news/claude-3-7-sonnet",
         summary: "Claude 3.7 Sonnet is Anthropic's most intelligent model to date and the first hybrid reasoning model, capable of both near-instant responses and extended, step-by-step thinking visible to users. It shows particularly strong improvements in coding, achieving state-of-the-art performance on SWE-bench Verified and TAU-bench."
     },
-    12: {
-        id: 12,
+    9: {
+        id: 9,
         title: "Activating AI Safety Level 3 Protections",
         source: "Anthropic",
         url: "https://www.anthropic.com/news/activating-asl3-protections",
         summary: "Anthropic has implemented AI Safety Level 3 (ASL3) protections for their advanced AI systems. These higher-tier safety measures include enhanced safeguards against misuse, improved monitoring systems, and stronger defenses against prompt injection and jailbreaking attempts while maintaining the system's utility."
     },
-    13: {
-        id: 13,
+    10: {
+        id: 10,
         title: "Cursor AI: AI-powered coding assistant",
         source: "Cursor AI",
         url: "https://www.cursor.com",
         summary: "Cursor AI is an AI-powered coding assistant that helps developers write code faster and more efficiently. It uses advanced AI models to understand developer intent and generate code suggestions."
     },
-    14: {
-        id: 14,
+    11: {
+        id: 11,
         title: "Agentic AI Software Engineering: Best Practices for Modern Development with Cursor and AI-Powered Tools",
         source: "Perplexity",
         url: "https://www.perplexity.ai/search/hello-can-you-please-help-me-p-LrF_Q5v.SQupTmo.VaL5sQ",
         summary: "This research explores the emerging landscape of agentic AI in software development, focusing on practical implementation strategies, prompt engineering excellence, and the integration of advanced AI models through tools like Cursor."
     },
-    15: {
-        id: 15,
+    12: {
+        id: 12,
         title: "Agentic AI Presentation",
         source: "GitHub",
         url: "https://github.com/happiness-enterprises/agentic-ai-presentation",
         summary: "This is the code repository for this presentation."
     },
-    16: {
-        id: 16,
+    13: {
+        id: 13,
         title: "Cursor Rules",
         source: "Cursor",
         url: "https://docs.cursor.com/context/rules",
         summary: "Cursor rules are a way to guide the AI's behavior. They are a set of instructions that the AI will follow when it is given a task."
     },
-    17: {
-        id: 17,
+    14: {
+        id: 14,
         title: "Windsurf Rules",
         source: "Windsurf",
         url: "https://windsurf.com/editor/directory",
         summary: "Windsurf rules are a way to guide the AI's behavior. They are a set of instructions that the AI will follow when it is given a task."
     },
-    18: {
-        id: 18,
+    15: {
+        id: 15,
         title: "FinAnalyst Pro",
         source: "GitHub",
         url: "finanalyst-pro/index.html",
