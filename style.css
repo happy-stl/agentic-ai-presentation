@@ -760,7 +760,7 @@ select.form-control {
   animation: float 20s ease-in-out infinite;
 }
 
-.profile-section {
+.presenter-section {
   position: absolute;
   top: 25%;
   /* Adjust as needed for vertical positioning */
@@ -769,7 +769,7 @@ select.form-control {
   /* Added for potential hover effects or pseudo-elements if desired later */
 }
 
-.profile-image {
+.presenter-profile-image {
   width: 200px;
   /* Adjust size as needed */
   height: 200px;
@@ -786,22 +786,41 @@ select.form-control {
   /* Smooth transition for hover effect */
 }
 
-.profile-image:hover {
+.presenter-profile-image:hover {
   transform: scale(1.05);
   /* Slightly enlarge image on hover */
 }
 
+.presenter-name {
+  margin-top: var(--space-16);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  color: var(--color-text);
+  letter-spacing: var(--letter-spacing-tight);
+  transition: color 0.2s ease;
+}
+
+.presenter-section:hover .presenter-name {
+  color: var(--color-primary);
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .profile-section {
+  .presenter-section {
     top: 20px;
     right: 20px;
   }
 
-  .profile-image {
-    width: 100px;
-    height: 100px;
+  .presenter-profile-image {
+    width: 80px;
+    height: 80px;
     border-width: 3px;
+  }
+
+  .presenter-name {
+    margin-top: var(--space-4);
+    font-size: var(--font-size-md);
   }
 
   h1 {
@@ -814,7 +833,7 @@ select.form-control {
 }
 
 @media (max-width: 480px) {
-  .profile-section {
+  .presenter-section {
     /* Center image on very small screens if preferred, or keep top-right */
     /* Example: Centering the image
                 left: 50%;
@@ -825,7 +844,7 @@ select.form-control {
     right: 15px;
   }
 
-  .profile-image {
+  .presenter-profile-image {
     width: 80px;
     height: 80px;
   }
