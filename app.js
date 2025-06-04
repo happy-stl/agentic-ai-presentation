@@ -9,10 +9,10 @@ const citations = {
     },
     2: {
         id: 2,
-        text: "Updated Claude 3.5 improved to 49% on SWE-bench",
-        source: "Anthropic October 2024 Update",
-        url: "https://www.anthropic.com/news/3-5-models-and-computer-use",
-        summary: "The updated Claude 3.5 Sonnet (Oct 2024) improved performance on SWE-bench Verified from 33.4% to 49.0%, scoring higher than all publicly available models including reasoning models."
+        text: "SWE-bench: benchmark for real-world coding tasks",
+        source: "SWE-bench Official Website",
+        url: "http://www.swebench.com",
+        summary: "SWE-bench is a benchmark for evaluating AI coding assistants on real-world GitHub issues. It measures how effectively models can understand and implement code changes across diverse codebases and languages."
     },
     3: {
         id: 3,
@@ -23,10 +23,10 @@ const citations = {
     },
     4: {
         id: 4,
-        text: "76% of developers rely on AI for daily tasks",
-        source: "Google DORA State of DevOps 2024",
-        url: "https://www.zdnet.com/article/draft-theres-good-news-and-bad-news-with-ai-assisted-software-development/",
-        summary: "Google's 2024 State of DevOps report found 76% of developers rely on AI for tasks like code writing, summarizing information, and code explanation. Correlated with increased productivity and code quality."
+        text: "Claude Sonnet 4 achieves 72.7% on SWE-bench",
+        source: "Introducing Claude 4",
+        url: "https://www.anthropic.com/news/claude-4",
+        summary: "Claude Sonnet 4 significantly improves on previous capabilities, excelling in coding with a state-of-the-art 72.7% on SWE-bench Verified, a benchmark for performance on real software engineering tasks."
     },
     5: {
         id: 5,
@@ -37,10 +37,10 @@ const citations = {
     },
     6: {
         id: 6,
-        text: "MCP now generally available in Microsoft Copilot Studio",
-        source: "Microsoft Announcement May 2025",
-        url: "https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/model-context-protocol-mcp-is-now-generally-available-in-microsoft-copilot-studio/",
-        summary: "Model Context Protocol (MCP) integration is now generally available in Microsoft Copilot Studio, providing standard way to connect AI systems with external data sources and tools."
+        text: "Model Context Protocol (MCP) creates a standard for AI tools",
+        source: "Model Context Protocol Official Documentation",
+        url: "https://modelcontextprotocol.io/introduction",
+        summary: "Model Context Protocol (MCP) is an open standard that enables LLMs to use tools via a consistent interface. It provides a unified way to connect AI systems with external data sources, APIs, and user interfaces through a structured protocol."
     },
     7: {
         id: 7,
@@ -55,6 +55,48 @@ const citations = {
         source: "JetBrains AI Assistant Survey 2024",
         url: "https://blog.jetbrains.com/ai/2024/04/developers-save-up-to-8-hours-per-week-with-jetbrains-ai-assistant/",
         summary: "91% of developers save time with AI tools. 37% save 1-3 hours per week, 22% save 3-5 hours per week, and 4% save more than 8 hours per week. Significant productivity improvements reported."
+    },
+    9: {
+        id: 9,
+        text: "Claude 3.7+ models show 70% code quality improvement",
+        source: "DataCamp Blog",
+        url: "https://www.datacamp.com/blog/claude-3-7-sonnet",
+        summary: "Claude 3.7 Sonnet shows a clear advantage in software engineering, with a 62.3% accuracy score in SWE-bench Verified, a significant jump from Claude 3.5 Sonnet's 49.0%. When using a custom scaffold (a structured prompt or additional context that helps guide the model's response toward a more accurate solution), that accuracy increases to 70.3%, making it the best-performing model in this category."
+    },
+    10: {
+        id: 10,
+        text: "Claude 3.5 Sonnet achieved 49% on SWE-bench Verified",
+        source: "Raising the bar on SWE-bench Verified with Claude 3.5 Sonnet",
+        url: "https://www.anthropic.com/engineering/swe-bench-sonnet",
+        summary: "The updated Claude 3.5 Sonnet achieved 49% on SWE-bench Verified, beating previous state-of-the-art models. SWE-bench tests a model's ability to complete real-world software engineering tasks from GitHub issues. Claude's performance demonstrates significant improvements in understanding, modifying, and testing code in complex repositories."
+    },
+    11: {
+        id: 11,
+        text: "Claude 3.7 Sonnet: First hybrid reasoning model",
+        source: "Claude 3.7 Sonnet and Claude Code",
+        url: "https://www.anthropic.com/news/claude-3-7-sonnet",
+        summary: "Claude 3.7 Sonnet is Anthropic's most intelligent model to date and the first hybrid reasoning model, capable of both near-instant responses and extended, step-by-step thinking visible to users. It shows particularly strong improvements in coding, achieving state-of-the-art performance on SWE-bench Verified and TAU-bench."
+    },
+    12: {
+        id: 12,
+        text: "Anthropic activates AI Safety Level 3 protections",
+        source: "Activating AI Safety Level 3 Protections",
+        url: "https://www.anthropic.com/news/activating-asl3-protections",
+        summary: "Anthropic has implemented AI Safety Level 3 (ASL3) protections for their advanced AI systems. These higher-tier safety measures include enhanced safeguards against misuse, improved monitoring systems, and stronger defenses against prompt injection and jailbreaking attempts while maintaining the system's utility."
+    },
+    13: {
+        id: 13,
+        text: "Cursor AI: AI-powered coding assistant",
+        source: "Cursor AI Official Website",
+        url: "https://www.cursor.com",
+        summary: "Cursor AI is an AI-powered coding assistant that helps developers write code faster and more efficiently. It uses advanced AI models to understand developer intent and generate code suggestions."
+    },
+    14: {
+        id: 14,
+        text: "Perplexity.ai: AI-powered research assistant",
+        source: "Agentic AI Software Engineering: Best Practices for Modern Development with Cursor and AI-Powered Tools",
+        url: "https://www.perplexity.ai/search/hello-can-you-please-help-me-p-LrF_Q5v.SQupTmo.VaL5sQ",
+        summary: "This research explores the emerging landscape of agentic AI in software development, focusing on practical implementation strategies, prompt engineering excellence, and the integration of advanced AI models through tools like Cursor."
     }
 };
 

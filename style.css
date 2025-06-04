@@ -2396,28 +2396,6 @@ select.form-control {
   margin: 0;
 }
 
-.research-source {
-  background: var(--color-background);
-  border: 2px solid var(--color-primary);
-  border-radius: var(--radius-base);
-  padding: var(--space-16);
-  text-align: center;
-}
-
-.research-source p {
-  margin: 0;
-  color: var(--color-text);
-}
-
-.research-source a {
-  font-weight: var(--font-weight-medium);
-  color: var(--color-primary);
-}
-
-.research-source a:hover {
-  text-decoration: underline;
-}
-
 /* TDD Section */
 .tdd-content {
   display: flex;
@@ -2525,6 +2503,25 @@ select.form-control {
   gap: var(--space-16);
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.research {
+  background: var(--color-surface);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-24);
+}
+
+.research h3 {
+  margin-bottom: var(--space-16);
+  color: var(--color-text);
+}
+
+.research p {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-24);
+  line-height: var(--line-height-normal);
 }
 
 .process-step {
