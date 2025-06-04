@@ -97,6 +97,13 @@ const citations = {
         source: "Agentic AI Software Engineering: Best Practices for Modern Development with Cursor and AI-Powered Tools",
         url: "https://www.perplexity.ai/search/hello-can-you-please-help-me-p-LrF_Q5v.SQupTmo.VaL5sQ",
         summary: "This research explores the emerging landscape of agentic AI in software development, focusing on practical implementation strategies, prompt engineering excellence, and the integration of advanced AI models through tools like Cursor."
+    },
+    15: {
+        id: 15,
+        text: "GitHub: Code repository for this presentation",
+        source: "GitHub: Agentic AI Presentation",
+        url: "https://github.com/happiness-enterprises/agentic-ai-presentation",
+        summary: "This is the code repository for this presentation."
     }
 };
 
