@@ -1652,8 +1652,7 @@ select.form-control {
 .research p {
   font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
-  margin-bottom: var(--space-24);
-  line-height: var(--line-height-normal);
+  margin-bottom: 0;
 }
 
 .process-step {
@@ -1898,11 +1897,9 @@ select.form-control {
 }
 
 .next-steps {
-  background: linear-gradient(135deg, var(--color-primary), var(--color-success));
-  color: white;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   border-radius: var(--radius-lg);
   padding: var(--space-24);
-  text-align: center;
 }
 
 .next-steps h3 {
@@ -1911,8 +1908,9 @@ select.form-control {
 }
 
 .next-steps p {
-  margin-bottom: var(--space-16);
-  opacity: 0.9;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-lg);
+  margin-bottom: 0;
 }
 
 .demo-prep {
@@ -2000,7 +1998,6 @@ select.form-control {
   border: 1px solid var(--color-card-border);
   border-radius: var(--radius-lg);
   padding: var(--space-24);
-  text-align: center;
 }
 
 .qa-section h3 {
