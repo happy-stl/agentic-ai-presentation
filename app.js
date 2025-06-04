@@ -1,12 +1,5 @@
 // Citation data
 const citations = {
-    1: {
-        id: 1,
-        title: "Claude 3.5 Sonnet solved 64% of problems",
-        source: "Anthropic",
-        url: "https://www.anthropic.com/news/claude-3-5-sonnet",
-        summary: "In internal agentic coding evaluation, Claude 3.5 Sonnet solved 64% of problems, outperforming Claude 3 Opus (38%). Shows marked improvement in coding proficiency and complex instruction handling."
-    },
     2: {
         id: 2,
         title: "SWE-bench: benchmark for real-world coding tasks",
@@ -28,13 +21,6 @@ const citations = {
         url: "https://www.anthropic.com/news/claude-4",
         summary: "Claude Sonnet 4 significantly improves on previous capabilities, excelling in coding with a state-of-the-art 72.7% on SWE-bench Verified, a benchmark for performance on real software engineering tasks."
     },
-    5: {
-        id: 5,
-        title: "Gemini 2.5 Pro tops LMArena by close to 40 points",
-        source: "RD World Report March 2025",
-        url: "https://www.rdworldonline.com/googles-gemini-2-5-pro-model-tops-lmarena-by-40-points-outperforms-competitors-in-scientific-reasoning/",
-        summary: "Gemini 2.5 Pro achieved 84% on GPQA Diamond benchmark, leading LMArena. Features thinking model capabilities and 1 million token context window with native multimodality."
-    },
     6: {
         id: 6,
         title: "Model Context Protocol (MCP) creates a standard for AI tools",
@@ -48,13 +34,6 @@ const citations = {
         source: "ThoughtWorks",
         url: "https://www.thoughtworks.com/en-us/insights/articles/fitness-function-driven-development",
         summary: "Fitness functions describe how close an architecture is to achieving architectural aims. During TDD, tests verify features conform to business outcomes; with fitness functions, tests measure system alignment to architectural goals."
-    },
-    8: {
-        id: 8,
-        title: "JetBrains AI Assistant Survey 2024",
-        source: "JetBrains",
-        url: "https://blog.jetbrains.com/ai/2024/04/developers-save-up-to-8-hours-per-week-with-jetbrains-ai-assistant/",
-        summary: "91% of developers save time with AI tools. 37% save 1-3 hours per week, 22% save 3-5 hours per week, and 4% save more than 8 hours per week. Significant productivity improvements reported."
     },
     9: {
         id: 9,
