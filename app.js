@@ -111,6 +111,13 @@ const citations = {
         source: "GitHub",
         url: "https://github.com/grimwm",
         summary: "William Grim is a software engineer and consultant."
+    },
+    17: {
+        id: 17,
+        title: "Universal Stock Decline Prediction Analysis",
+        source: "Perplexity",
+        url: "https://www.perplexity.ai/search/universal-stock-decline-predic-hZr_Yj6OQ.uMxKwDnU5gLA",
+        summary: "Fractal Risk Assessment of Palantir Technologies (PLTR): Multi-Scale Crisis Prediction Analysis"
     }
 };
 
