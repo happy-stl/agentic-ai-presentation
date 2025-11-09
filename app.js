@@ -118,6 +118,13 @@ const citations = {
         source: "Perplexity",
         url: "https://www.perplexity.ai/search/universal-stock-decline-predic-hZr_Yj6OQ.uMxKwDnU5gLA",
         summary: "Fractal Risk Assessment of Palantir Technologies (PLTR): Multi-Scale Crisis Prediction Analysis"
+    },
+    18: {
+        id: 18,
+        title: "Introducing Claude Sonnet 4.5",
+        source: "Anthropic",
+        url: "https://www.anthropic.com/news/claude-sonnet-4-5",
+        summary: "Sonnet 4.5 is an upgraded AI model from Anthropic that performs substantially better at reasoning and math evaluations and generally improved domain expertise."
     }
 };
 

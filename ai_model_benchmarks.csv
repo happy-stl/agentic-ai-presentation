@@ -1,4 +1,5 @@
 Model,SWE-bench Verified,Context Window,Input Cost (per 1M),Output Cost (per 1M),Special Capabilities
+Claude 4.5 Sonnet,77.2%,200K,$3,$15,30-hour autonomous work
 Claude 4 Opus,72.5%,200K,$15,$75,7-hour autonomous work
 Claude 4 Sonnet,72.7%,200K,$3,$15,Enhanced instruction following
 Claude 3.7 Sonnet,70.3%,200K,$3,$15,Hybrid reasoning modes
